@@ -12,9 +12,13 @@
 		3F3971891F15C10100A11ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3971871F15C10100A11ECF /* Main.storyboard */; };
 		3F39718B1F15C10100A11ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F39718A1F15C10100A11ECF /* Assets.xcassets */; };
 		3F39718E1F15C10100A11ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F39718C1F15C10100A11ECF /* LaunchScreen.storyboard */; };
+		6286D9B3EBB916A35BAB9BAA /* Pods_oke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CC8AD638835B623669A0E /* Pods_oke.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BBDF880F465D6A91B53C3F2 /* Pods-oke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oke.release.xcconfig"; path = "Pods/Target Support Files/Pods-oke/Pods-oke.release.xcconfig"; sourceTree = "<group>"; };
+		221CC8AD638835B623669A0E /* Pods_oke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D9EC363FEC3589088E5765 /* Pods-oke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oke/Pods-oke.debug.xcconfig"; sourceTree = "<group>"; };
 		3F3971801F15C10100A11ECF /* oke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3971831F15C10100A11ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F3971851F15C10100A11ECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6286D9B3EBB916A35BAB9BAA /* Pods_oke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29A97B2DC3631AB273FFABEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				221CC8AD638835B623669A0E /* Pods_oke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F3971771F15C10100A11ECF = {
 			isa = PBXGroup;
 			children = (
 				3F3971821F15C10100A11ECF /* oke */,
 				3F3971811F15C10100A11ECF /* Products */,
+				C5DDEE02928B0CC779710B47 /* Pods */,
+				29A97B2DC3631AB273FFABEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = oke;
 			sourceTree = "<group>";
 		};
+		C5DDEE02928B0CC779710B47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28D9EC363FEC3589088E5765 /* Pods-oke.debug.xcconfig */,
+				1BBDF880F465D6A91B53C3F2 /* Pods-oke.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F3971921F15C10100A11ECF /* Build configuration list for PBXNativeTarget "oke" */;
 			buildPhases = (
+				D00F42218DA73419A9BD8244 /* [CP] Check Pods Manifest.lock */,
 				3F39717C1F15C10100A11ECF /* Sources */,
 				3F39717D1F15C10100A11ECF /* Frameworks */,
 				3F39717E1F15C10100A11ECF /* Resources */,
+				E185AF8290EFDF0117E36A88 /* [CP] Embed Pods Frameworks */,
+				71C1B7E5A825CD8B608B954F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					3F39717F1F15C10100A11ECF = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5J3T7PP7ZF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71C1B7E5A825CD8B608B954F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oke/Pods-oke-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00F42218DA73419A9BD8244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E185AF8290EFDF0117E36A88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oke/Pods-oke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F39717C1F15C10100A11ECF /* Sources */ = {
@@ -258,24 +334,37 @@
 		};
 		3F3971931F15C10100A11ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D9EC363FEC3589088E5765 /* Pods-oke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5J3T7PP7ZF;
 				INFOPLIST_FILE = oke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.school.oke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3F3971941F15C10100A11ECF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBDF880F465D6A91B53C3F2 /* Pods-oke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5J3T7PP7ZF;
 				INFOPLIST_FILE = oke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.school.oke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +388,7 @@
 				3F3971941F15C10100A11ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
