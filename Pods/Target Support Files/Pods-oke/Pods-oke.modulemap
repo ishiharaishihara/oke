@@ -1,0 +1,6 @@
+framework module Pods_oke {
+  umbrella header "Pods-oke-umbrella.h"
+
+  export *
+  module * { export * }
+}
